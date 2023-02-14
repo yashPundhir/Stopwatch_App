@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+.container {
+	height: 100vh;
+	background: radial-gradient(circle at left top, #7c8992, #1b242d);
+	color: #f0f0f0;
+}
+
+.parent {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.stopwatch {
+	background-color: transparent;
+	border-radius: 45px;
+	box-shadow: inset -5px -5px 30px #000, inset 10px 10px 40px #000,
+		-20px -20px 30px #1d262f, 20px 20px 30px #151c21;
+
+	width: 380px;
+	height: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.material-icons {
+	color: #f0f0f0;
+}
+
+.progress-bar {
+	margin-top: 40px;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cl-parent {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cl-container {
+	height: 280px;
+	width: 400px;
+	background-color: transparent;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.circular-progress {
+	position: relative;
+	height: 250px;
+	width: 250px;
+	background-color: #252525;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.circular-progress:before {
+	content: "";
+	position: absolute;
+	height: 94%;
+	width: 94%;
+	left: 7.5px;
+	background-color: #fefefe;
+	border-radius: 50%;
+}
+.value-container {
+	position: relative;
+	font-size: 50px;
+	color: #231c3d;
+}
+
+.main-menu {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.play {
+	font-size: 50px;
+}
+.pause {
+	font-size: 50px;
+	display: none;
+}
+.pause-div {
+	display: none;
+}
+.reset {
+	font-size: 30px;
+}
+.flag {
+	font-size: 30px;
+}
+button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
