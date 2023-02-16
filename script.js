@@ -50,3 +50,11 @@ function pauseTimer() {
 	timerOn = true;
 	clearInterval(progress);
 }
+function resetTimer() {
+	timerOn = true;
+	clearInterval(progress);
+	timing.textContent = `00:00.00`;
+	sec = 1;
+	min = 0;
+	hour = 0;
+}
